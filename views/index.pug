@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  if resultat
+    p #{resultat}
+  if destinataire
+    p=`Votre message à ${destinataire} a bien été envoyé.`
+
